@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Все события</title>
+    <link rel="stylesheet" href="CSS_file.css">
+</head>
+<body>
+    <header>
+        <h1>Все мероприятия</h1>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="events.html">Все события</a>
+            <a href="register.html">Регистрация</a>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>Предстоящие события</h2>
+            <div id="eventsList" class="events-grid"></div>
+        </section>
+
+        <section>
+            <h2>Добавить новое событие</h2>
+            <form id="createEventForm">
+                <label for="title">Название:</label>
+                <input type="text" id="title" required>
+
+                <label for="description">Описание:</label>
+                <textarea id="description" rows="4" required></textarea>
+
+                <label for="eventDate">Дата и время:</label>
+                <input type="datetime-local" id="eventDate" required>
+
+                <label for="location">Место проведения:</label>
+                <input type="text" id="location" required>
+
+                <button type="submit">Создать событие</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Платформа событий</p>
+    </footer>
+
+    <script src="Js_file.js"></script>
+</body>
+</html>
